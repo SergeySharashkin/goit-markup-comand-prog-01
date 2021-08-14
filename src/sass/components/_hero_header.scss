@@ -109,7 +109,7 @@
 .modal {
   position: absolute;
   width: 250px;
-  height: 502px;
+  height: 100%;
   right: 0;
   top: 0;
   z-index: 200;
@@ -127,8 +127,6 @@
 .buy__now {
   position: absolute;
   padding: 0;
-  padding-left: 48px;
-  padding-right: 48px;
   width: 209px;
   left: 21px;
   top: 60px;
@@ -147,17 +145,17 @@
 .buy__now--contain {
   display: flex;
   align-items: center;
-  height: 44px;
 }
 .buy__now__icon {
   margin: 0;
-  margin-left: 25px;
+  margin-left: 14px;
 }
 .buy__now--content {
+  justify-content: center;
   display: flex;
+  width: 90.7px;
+  height: 44px;
   align-items: center;
-  margin-left: 14px;
-  padding-bottom: 2.5px;
 }
 .modal__list {
   position: absolute;
@@ -193,7 +191,20 @@
 .is-open {
   transform: translateX(0);
 }
-
+@media screen and (max-width: 767px) {
+  .button__in__tablet {
+    display: none;
+  }
+  .bio__eco {
+    display: none;
+  }
+  .example__eat__ice-cream {
+    display: none;
+  }
+  .goods {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
     width: 254px;
@@ -232,9 +243,128 @@
     top: 52px;
     right: 224px;
   }
-  .buy__now--tablet {
-    position: absolute;
+  .button__in__tablet {
     top: 38px;
-    right: 34px;
+    left: 574px;
+    width: 160px;
+    height: 44px;
+    align-items: center;
+  }
+  .buy__now--contain--tablet {
+    display: flex;
+    align-items: center;
+  }
+  .buy__now__icon--tablet {
+    margin-left: 12px;
+  }
+  .buy__now--content--tablet {
+    display: flex;
+    align-items: center;
+  }
+  .bio__eco--image {
+    width: 124px;
+    height: 126px;
+
+    position: absolute;
+    left: 34px;
+    top: 245px;
+  }
+  .bio__eco__description {
+    position: absolute;
+    left: 154px;
+    top: 292px;
+    width: 114px;
+    height: 48px;
+
+    font-size: 8px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+  .bio__eco--icon {
+    position: absolute;
+    left: 154px;
+    bottom: 26px;
+    width: 18px;
+    height: 18px;
+  }
+  .goods {
+    position: absolute;
+    left: 691px;
+    top: 96px;
+    .goods__list {
+      position: relative;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .goods__item {
+      position: absolute;
+      z-index: 30;
+      &:not(:last-child) {
+        left: 0px;
+        top: 0px;
+      }
+      &:last-child {
+        left: 0px;
+        top: 50px;
+      }
+    }
+    .among {
+      font-family: Titan One;
+      font-size: 28px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+
+      color: #d41443;
+    }
+    .goods__name {
+      width: 50px;
+      display: block;
+      justify-content: center;
+      display: flex;
+      font-family: DM Sans;
+      font-size: 8px;
+      line-height: 1.25;
+
+      color: #ffffff;
+    }
+  }
+  .back__style {
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border-radius: 50%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  .back__style-first {
+    position: absolute;
+    left: 715px;
+    top: 94px;
+  }
+  .back__style-second {
+    position: absolute;
+    left: 715px;
+    top: 144px;
+  }
+  .example__eat__ice-cream {
+    position: absolute;
+    width: 168px;
+    height: 133px;
+    left: 566px;
+    top: 266px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    display: none;
+  }
+  .hero__header__container {
+    padding: 0 40px;
+    padding-top: 37px;
+    width: 768px;
+    height: 399px;
+  }
+  .button__open {
+    display: none;
   }
 }

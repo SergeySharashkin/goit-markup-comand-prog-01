@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-        rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,9 +14,9 @@
         <header class="header">
             <div class="header__contain">
                 <a class="header__link" href="">
-                    <img class="logo" src="" alt="logo">
+                    <img class="logo" src="/images/logo 1.svg" alt="logo">
                 </a>
-                <button class="button">
+                <button class="button__open">
                     <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 1H20" stroke="#D41443" />
                         <path d="M0 7H20" stroke="#D41443" />
@@ -36,10 +33,20 @@
                     <button class="button__made">How it’s made?</button>
                 </div>
             </div>
-
-            <img class="slider" src="" alt="slider">
-            <div class="slider__bgc"></div>
+            <div class="slider__bgc">
+                <img class="slider" src="/images/slider-pic7 1.svg" alt="slider">
+            </div>
         </header>
+        <button class="buy__now--tablet">
+            <div class="buy__now--contain">
+                <span class="buy__now--content">Buy now</span>
+                <svg class="buy__now__icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </button>
         <div class="modal">
             <svg class="button__close" width="16" height="16" viewBox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +85,7 @@
         </div>
     </div>
     <script>
-        const openModalOpen = document.querySelector('.button');
+        const openModalOpen = document.querySelector('.button__open');
         openModalOpen.addEventListener('click', isOpenModal);
         const modalEL = document.querySelector('.modal');
         function isOpenModal() {

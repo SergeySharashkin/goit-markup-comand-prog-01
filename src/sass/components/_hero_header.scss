@@ -5,10 +5,18 @@
   background-color: $hero-bgr-color;
   height: 502px;
 }
-.button {
+.logo {
+  width: 199px;
+  height: 50px;
+  background-color: inherit;
+}
+.button__open {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 120;
   background-color: inherit;
   border: none;
-
   padding: 0;
 }
 
@@ -81,9 +89,11 @@
 }
 
 .slider {
+  width: 171px;
+  height: 410px;
   position: absolute;
-  top: 92px;
-  right: 32px;
+  top: 9px;
+  left: 81px;
   z-index: 50;
 }
 .slider__bgc {
@@ -187,5 +197,44 @@
 @media screen and (min-width: 768px) {
   .modal {
     width: 254px;
+  }
+  .hero__header__container {
+    padding: 0 34px;
+    padding-top: 37px;
+    width: 768px;
+    height: 399px;
+  }
+  .hero {
+    margin-top: 15px;
+  }
+  .hero__title {
+    font-size: 22px;
+    line-height: 1.136;
+  }
+  .hero__title--accent {
+    font-size: 34px;
+    line-height: 90.5%;
+  }
+  .button__contain {
+    margin-top: 20px;
+  }
+  .slider__bgc {
+    left: 307px;
+    top: 31px;
+  }
+  .slider {
+    width: 143px;
+    height: 336px;
+    top: 32px;
+    left: 71px;
+  }
+  .button__open {
+    top: 52px;
+    right: 224px;
+  }
+  .buy__now--tablet {
+    position: absolute;
+    top: 38px;
+    right: 34px;
   }
 }

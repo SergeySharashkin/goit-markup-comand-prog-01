@@ -14,8 +14,26 @@
         <header class="header">
             <div class="header__contain">
                 <a class="header__link" href="">
-                    <img class="logo" src="/images/logo 1.svg" alt="logo">
+                    <img class="logo" src="/images/logo1.png" alt="logo">
                 </a>
+                <ul class="site-nav__list">
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link site-nav__link--current">Home
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link">About us</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link">How it’s made?</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link">Our products</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link">Contact</a>
+                    </li>
+                </ul>
                 <button class="button__open">
                     <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 1H20" stroke="#D41443" />
@@ -34,13 +52,32 @@
                 </div>
             </div>
             <div class="bio__eco">
-                <img class="bio__eco--image" src="/images/slider-pic5 1.svg" alt="bio__eco">
+                <picture>
+                    <source srcset="/images/Dslider-pic51.png 188w, /images/Dslider-pic51@2x.png 376w"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 188px, 100vw">
+                    <source srcset="/images/Tslider-pic51.png 124w, /images/Tslider-pic51@2x.png 248w"
+                        media="(min-width: 768px)" sizes="(min-width: 768px) 124px, 100vw">
+                    <img class="bio__eco--image" src="/images/Dslider-pic51.png" alt="bio__eco">
+                </picture>
                 <p class="bio__eco__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et</p>
-                <img class="bio__eco--icon" src="/images/arrow-right 3.svg" alt="arrow-right">
+                <picture>
+                    <source srcset="/images/Marrow-right4.png 40w, /images/Marrow-right4@2x.png 80w"
+                        media="(min-width: 768px)" sizes="(min-width: 768px) 40px, 100vw">
+
+                    <img class="bio__eco--icon" src="/images/Marrow-right4.png" alt="arrow-right">
+                </picture>
             </div>
             <div class="slider__bgc">
-                <img class="slider" src="/images/slider-pic7 1@2x.png" alt="slider">
+                <picture>
+                    <source srcset="/images/Dslider-pic71.png 236w, /images/Dslider-pic71@2x.png 472w"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 236px, 100vw">
+                    <source srcset="/images/Tslider-pic71.png 143w, /images/Tslider-pic71@2x.png 286w"
+                        media="(min-width: 768px)" sizes="(min-width: 768px) 143px, 100vw">
+                    <source srcset="/images/Mslider-pic71.png 171w, /images/Mslider-pic71@2x.png 342w"
+                        media="(min-width: 320px)" sizes="(min-width: 320px) 171px, 100vw">
+                    <img class="slider" src="/images/Mslider-pic71.png" alt="slider">
+                </picture>
             </div>
             <button class="buy__now button__in__tablet">
                 <div class="buy__now--contain--tablet">
@@ -69,7 +106,13 @@
             <div class="back__style back__style-first"></div>
             <div class="back__style back__style-second"></div>
             <div class="example__eat__ice-cream">
-                <img class="eat__ice-cream" src="/images/slider-pic4 1@2x.png" alt="">
+                <picture>
+                    <source srcset="/images/Dslider-pic41.png 293w, /images/Dslider-pic41@2x.png 586w"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 293px, 100vw">
+                    <source srcset="/images/Tslider-pic41.png 168w, /images/Tslider-pic41@2x.png 336w"
+                        media="(min-width: 768px)" sizes="(min-width: 768px) 168px, 100vw">
+                    <img class="eat__ice-cream" src="/images/Tslider-pic41.png" alt="">
+                </picture>
             </div>
         </header>
 
@@ -107,7 +150,6 @@
                 <li class="modal__item">
                     <a href="" class="modal__link">Contact</a>
                 </li>
-
             </ul>
         </div>
     </div>

@@ -1,0 +1,62 @@
+.contacts {
+  background-color: $footer-bgr-color;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.contacts__card {
+  padding: 43px 20px;
+  list-style-type: none;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 12px;
+  transform: translateY(-84px);
+}
+.contacts__address {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.contacts__place {
+  display: inline-block;
+  margin-bottom: 25px;
+
+  color: #ffffff;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0 24px;
+  background-color: $secondary-bgr-color;
+  border-radius: 4px;
+  &--green {
+    background-color: $tettiary-bgr-color;
+  }
+}
+.contacts__city {
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+.contacts__info {
+  color: $secondary-text-color;
+  line-height: 150%;
+}
+.contacts__working-hours {
+  padding: 25px 0;
+  border-bottom: 1px solid #e1e1e1;
+  line-height: 186%;
+}
+
+.contacts__time {
+  color: $tertiary-text-color;
+}
+.contacts__links {
+  padding-top: 25px;
+
+  line-height: 150%;
+}
+.contacts__links a {
+  text-decoration: none;
+  color: $secondary-text-color;
+}

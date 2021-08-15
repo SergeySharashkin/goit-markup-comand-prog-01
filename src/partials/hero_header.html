@@ -10,9 +10,46 @@
 </head>
 
 <body>
-    <div class="hero__header__container">
-        <header class="header">
+    <header class="header">
+        <div class="hero__header__container">
+            <div class="modal">
+                <svg class="button__close" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.25928 1L14.7408 15" stroke="white" />
+                    <path d="M1 14.7407L15 1.25924" stroke="white" />
+                </svg>
+                <button class="buy__now button__in__modal">
+                    <div class="buy__now--contain">
+                        <span class="buy__now--content">Buy now</span>
+                        <svg class="buy__now__icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </button>
+
+                <ul class="modal__list">
+                    <li class="modal__item">
+                        <a href="" class="modal__link modal__link--current">Home
+                        </a>
+                    </li>
+                    <li class="modal__item">
+                        <a href="" class="modal__link">About us</a>
+                    </li>
+                    <li class="modal__item">
+                        <a href="" class="modal__link">How it’s made?</a>
+                    </li>
+                    <li class="modal__item">
+                        <a href="" class="modal__link">Our products</a>
+                    </li>
+                    <li class="modal__item">
+                        <a href="" class="modal__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
             <div class="header__contain">
+
                 <a class="header__link" href="">
                     <img class="logo" src="/images/logo1.png" alt="logo">
                 </a>
@@ -34,13 +71,25 @@
                         <a href="" class="site-nav__link">Contact</a>
                     </li>
                 </ul>
-                <button class="button__open">
-                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 1H20" stroke="#D41443" />
-                        <path d="M0 7H20" stroke="#D41443" />
-                        <path d="M0 13H20" stroke="#D41443" />
-                    </svg>
-                </button>
+                <div class="header__button__position">
+                    <button class="button__open">
+                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1H20" stroke="#D41443" />
+                            <path d="M0 7H20" stroke="#D41443" />
+                            <path d="M0 13H20" stroke="#D41443" />
+                        </svg>
+                    </button>
+                    <button class="buy__now button__in__tablet">
+                        <div class="buy__now--contain--tablet">
+                            <span class="buy__now--content--tablet">Buy now</span>
+                            <svg class="buy__now__icon--tablet" width="8" height="10" viewBox="0 0 8 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
             </div>
             <div class="hero">
                 <h1 class="hero__title">ice cream made with
@@ -79,16 +128,7 @@
                     <img class="slider" src="/images/Mslider-pic71.png" alt="slider">
                 </picture>
             </div>
-            <button class="buy__now button__in__tablet">
-                <div class="buy__now--contain--tablet">
-                    <span class="buy__now--content--tablet">Buy now</span>
-                    <svg class="buy__now__icon--tablet" width="8" height="10" viewBox="0 0 8 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-            </button>
+
             <div class="goods">
                 <ul class="goods__list">
                     <li class="goods__item">
@@ -114,50 +154,16 @@
                     <img class="eat__ice-cream" src="/images/Tslider-pic41.png" alt="">
                 </picture>
             </div>
-        </header>
-
-        <div class="modal">
-            <svg class="button__close" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.25928 1L14.7408 15" stroke="white" />
-                <path d="M1 14.7407L15 1.25924" stroke="white" />
-            </svg>
-            <button class="buy__now">
-                <div class="buy__now--contain">
-                    <span class="buy__now--content">Buy now</span>
-                    <svg class="buy__now__icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-            </button>
-
-            <ul class="modal__list">
-                <li class="modal__item">
-                    <a href="" class="modal__link modal__link--current">Home
-                    </a>
-                </li>
-                <li class="modal__item">
-                    <a href="" class="modal__link">About us</a>
-                </li>
-                <li class="modal__item">
-                    <a href="" class="modal__link">How it’s made?</a>
-                </li>
-                <li class="modal__item">
-                    <a href="" class="modal__link">Our products</a>
-                </li>
-                <li class="modal__item">
-                    <a href="" class="modal__link">Contact</a>
-                </li>
-            </ul>
         </div>
-    </div>
+    </header>
+
+
     <script>
         const openModalOpen = document.querySelector('.button__open');
         openModalOpen.addEventListener('click', isOpenModal);
         const modalEL = document.querySelector('.modal');
         function isOpenModal() {
+            modalEL.classList.remove('is-hidden')
             modalEL.classList.add('is-open')
         }
         const closeModalOpen = document.querySelector('.button__close');

@@ -51,16 +51,17 @@
   color: $tertiary-text-color;
 
   margin-bottom: 17px;
-  max-width: 340px;
+  max-width: 232px;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.15;
     margin-bottom: 0;
     letter-spacing: 0.04em;
+    max-width: 340px;
     @media screen and (min-width: 1200px) {
       font-size: 30px;
-      max-width: 477px;
+      max-width: 480px;
     }
   }
   &--accent {
@@ -76,7 +77,7 @@
       font-size: 48px;
       margin-top: 16px;
       letter-spacing: 0.06em;
-      // max-width: 200px;
+      max-width: 340px;
     }
     @media screen and (min-width: 1200px) {
       font-size: 58px;

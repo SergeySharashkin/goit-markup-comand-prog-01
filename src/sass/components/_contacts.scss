@@ -3,6 +3,7 @@
   width: 100%;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 113px;
 }
 .contacts__card {
   padding: 43px 20px;
@@ -13,6 +14,11 @@
   font-weight: 500;
   font-size: 12px;
   transform: translateY(-84px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.contacts__card + .contacts__card {
+  margin-top: 20px;
 }
 .contacts__address {
   padding-bottom: 25px;
@@ -53,10 +59,35 @@
 }
 .contacts__links {
   padding-top: 25px;
-
   line-height: 150%;
 }
 .contacts__links a {
+  display: block;
   text-decoration: none;
   color: $secondary-text-color;
+}
+.contacts__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -54px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+  border: transparent;
+  background-color: $accent-color;
+  color: $hero-text-color;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+.contacts__button--reverse {
+  background-color: $hero-text-color;
+  color: $accent-color;
+  margin-top: 10px;
+}
+.contacts__button-icon {
+  margin-left: 13px;
 }

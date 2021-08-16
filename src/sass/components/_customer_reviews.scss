@@ -1,6 +1,6 @@
 .reviews__container {
   margin: 0 auto;
-  width: 1280px;
+  width: 320px;
   //   background-color: burlywood;
 }
 .Reviews__img {
@@ -14,24 +14,28 @@
 .Reviews__content {
   margin: 0 auto;
   position: relative;
-  width: 926px;
-  height: 138px;
-  padding: 47px 89px 39px 87px;
+  // width: 280px;
+  // height: 138px;
+  padding: 43px 66px 26px 57px;
   background-color: #fafafa;
+  margin: 0 20px;
 }
-.Reviews__item {
+.Reviews__ico {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 45px;
   width: 54px;
   height: 40px;
   font-size: 60px;
+  // z-index: -1;
 }
 .Reviews__text {
+  position: relative;
   font-family: $primary-font;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.8;
   letter-spacing: 0.04em;
+  z-index: 2;
 }
 .reviews__gradient {
   text-align: center;
@@ -79,6 +83,7 @@
 .reviews__pagination {
   display: flex;
   justify-content: center;
+  margin-bottom: 170px;
 }
 
 .reviews__pagination-link {

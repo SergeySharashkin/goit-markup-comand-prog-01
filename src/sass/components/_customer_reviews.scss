@@ -1,3 +1,6 @@
+// .Reviews {
+//   position: relative;
+// }
 .reviews__container {
   margin: 0 auto;
   width: 320px;
@@ -8,7 +11,12 @@
     width: 926px;
   }
 }
-.Reviews__img {
+.reviews__img {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.Reviews__img--item {
   width: 85px;
   height: 85px;
   border-radius: 50%;
@@ -16,15 +24,18 @@
   margin-top: 123px;
   margin-bottom: 15px;
 }
-.Reviews__imgOne {
+.Reviews__img--itemOne {
+  // display: none;
 }
-.Reviews__imgTwo {
+.Reviews__img--itemTwo {
   position: absolute;
   top: 0;
+  left: 118px;
 }
-.Reviews__imgThree {
+.Reviews__img--itemThree {
   position: absolute;
   top: 0;
+  left: 118px;
 }
 .Reviews__content {
   margin: 0 auto;

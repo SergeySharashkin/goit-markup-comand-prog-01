@@ -188,9 +188,25 @@ ul {
 
     width: 171px;
     height: 410px;
+
+    animation-name: ice_cream_anim;
+    animation-duration: 1700ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 }
-
+.primary_subject:hover {
+  animation-play-state: paused;
+}
+@keyframes ice_cream_anim {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 53%;
+  }
+}
 @media screen and (max-width: 767px) {
   .button__in__tablet {
     display: none;

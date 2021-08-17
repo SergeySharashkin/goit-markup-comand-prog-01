@@ -1,38 +1,34 @@
-<header class="header">
+<header class="header" id='home'>
     <div class="hero__header__container">
         <div class="modal">
-            <svg class="button__close" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.25928 1L14.7408 15" stroke="white" />
-                <path d="M1 14.7407L15 1.25924" stroke="white" />
+            <svg class="button__close" width='14' height='14'>
+                <use href="/images/icons.svg#close"></use>
             </svg>
             <button class="buy__now button__in__modal">
                 <div class="buy__now--contain">
                     <span class="buy__now--content">Buy now</span>
-                    <svg class="buy__now__icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
+                    <svg class="buy__now__icon" width="8" height="10">
+                        <use href="/images/icons.svg#arrow"></use>
                     </svg>
                 </div>
             </button>
 
             <ul class="modal__list">
                 <li class="modal__item">
-                    <a href="" class="modal__link modal__link--current">Home
+                    <a href="#home" class="modal__link modal__link--current">Home
                     </a>
                 </li>
                 <li class="modal__item">
-                    <a href="" class="modal__link">About us</a>
+                    <a href="#products" class="modal__link">About us</a>
                 </li>
                 <li class="modal__item">
-                    <a href="" class="modal__link">How it’s made?</a>
+                    <a href="#How" class="modal__link">How it’s made?</a>
                 </li>
                 <li class="modal__item">
-                    <a href="" class="modal__link">Our products</a>
+                    <a href="#Our" class="modal__link">Our products</a>
                 </li>
                 <li class="modal__item">
-                    <a href="" class="modal__link">Contact</a>
+                    <a href="#Contact" class="modal__link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -43,37 +39,33 @@
             </a>
             <ul class="site-nav__list">
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link site-nav__link--current">Home
+                    <a href="#home" class="site-nav__link site-nav__link--current">Home
                     </a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link">About us</a>
+                    <a href="#products" class="site-nav__link">About us</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link">How it’s made?</a>
+                    <a href="#How" class="site-nav__link">How it’s made?</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link">Our products</a>
+                    <a href="#Our" class="site-nav__link">Our products</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link">Contact</a>
+                    <a href="#Contact" class="site-nav__link">Contact</a>
                 </li>
             </ul>
             <div class="header__button__position">
                 <button class="button__open">
-                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 1H20" stroke="#D41443" />
-                        <path d="M0 7H20" stroke="#D41443" />
-                        <path d="M0 13H20" stroke="#D41443" />
+                    <svg width='20' height='12'>
+                        <use href="/images/icons.svg#burger"></use>
                     </svg>
                 </button>
                 <button class="buy__now button__in__tablet">
                     <div class="buy__now--contain--tablet">
                         <span class="buy__now--content--tablet">Buy now</span>
-                        <svg class="buy__now__icon--tablet" width="8" height="10" viewBox="0 0 8 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                        <svg class="buy__now__icon--tablet" width="8" height="10">
+                            <use href="/images/icons.svg#arrow"></use>
                         </svg>
                     </div>
                 </button>
@@ -87,6 +79,18 @@
                 <button class="button__products">Products</button>
                 <button class="button__products button__made--pos">How it’s made?</button>
             </div>
+        </div>
+
+        <div class="primary">
+            <picture>
+                <source srcset="/images/Dslider-pic71.png 236w, /images/Dslider-pic71@2x.png 472w"
+                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 236px, 100vw">
+                <source srcset="/images/Tslider-pic71.png 143w, /images/Tslider-pic71@2x.png 286w"
+                    media="(min-width: 768px)" sizes="(min-width: 768px) 143px, 100vw">
+                <source srcset="/images/Mslider-pic71.png 171w, /images/Mslider-pic71@2x.png 342w"
+                    media="(min-width: 320px)" sizes="(min-width: 320px) 171px, 100vw">
+                <img class="primary_subject" src="/images/Mslider-pic71.png" alt="slider">
+            </picture>
         </div>
         <div class="bio__eco">
             <picture>
@@ -105,18 +109,6 @@
                 <img class="bio__eco--icon" src="/images/Marrow-right4.png" alt="arrow-right">
             </picture>
         </div>
-        <div class="slider__bgc">
-            <picture>
-                <source srcset="/images/Dslider-pic71.png 236w, /images/Dslider-pic71@2x.png 472w"
-                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 236px, 100vw">
-                <source srcset="/images/Tslider-pic71.png 143w, /images/Tslider-pic71@2x.png 286w"
-                    media="(min-width: 768px)" sizes="(min-width: 768px) 143px, 100vw">
-                <source srcset="/images/Mslider-pic71.png 171w, /images/Mslider-pic71@2x.png 342w"
-                    media="(min-width: 320px)" sizes="(min-width: 320px) 171px, 100vw">
-                <img class="slider" src="/images/Mslider-pic71.png" alt="slider">
-            </picture>
-        </div>
-
         <div class="goods">
             <ul class="goods__list">
                 <li class="goods__item">
@@ -149,12 +141,11 @@
     openModalOpen.addEventListener('click', isOpenModal);
     const modalEL = document.querySelector('.modal');
     function isOpenModal() {
-        modalEL.classList.remove('is-hidden')
         modalEL.classList.add('is-open')
     }
     const closeModalOpen = document.querySelector('.button__close');
     closeModalOpen.addEventListener('click', isCloseModal);
     function isCloseModal() {
-        modalEL.classList.remove('is-open')
+        modalEL.classList.remove('is-open');
     }
 </script>

@@ -1,19 +1,39 @@
 
-    <section class="Reviews">
+    <section class="Reviews" id="customer-reviews">
         <div class="reviews__container">
             <div class="reviews__img">
-                <img class="Reviews__img--item Reviews__img--itemOne" src="/images/testimonials11.png" alt="request">
-                <img class="Reviews__img--item Reviews__img--itemTwo" src="/images/testimonials12.png" alt="request">
-                <img class="Reviews__img--item Reviews__img--itemThree" src="/images/testimonials11(1).png" alt="request">
+                <!-- <img srcset="photo.jpg 1x, photo@2x.jpg 2x" src="photo.jpg" alt="Описание изображения для всех версий" /> -->
+                <img class="Reviews__img--item Reviews__img--itemOne" srcset="
+                /images/testimonials11.png 1x,
+                /images/testimonials11@2x.png 2x"
+                src="/images/testimonials11.png" alt="request">
+                <img class="Reviews__img--item Reviews__img--itemTwo" srcset="
+                /images/testimonials12.png 1x,
+                /images/testimonials12@2x.png 2x"
+                src="/images/testimonials12.png" alt="request">
+                <img class="Reviews__img--item Reviews__img--itemThree" srcset="
+                /images/testimonials11(1).png 1x,
+                /images/testimonials11@2x(1).png 2x"
+                src="/images/testimonials11(1).png" alt="request">
             </div>
             <div class="Reviews__content">
                 <svg class="Reviews__ico" widht="54" height="40">
                     <use href="/images/icons.svg#quotes"></use>
+                    <!-- <use href="/images/quotes.svg#quotes"></use> -->
                 </svg>                
                 <div class="reviews__gradient">
-                    <p class="Reviews__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-                        nulla quam nunc, accumsan
-                        congue. Lorem ipsum primis in nibh vel risus.</p>
+                   <!-- <div class="reviews__text"> -->
+                        <p class="reviews__text Reviews__text--one">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+                            nulla quam nunc, accumsan
+                            congue. Lorem ipsum primis in nibh vel risus.</p>
+                        <p class="reviews__text Reviews__text--two">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+                            nulla quam nunc, accumsan
+                            congue. Lorem ipsum primis in nibh vel risus. TWO</p>
+                        <p class="reviews__text Reviews__text--three">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                            hendrerit
+                            nulla quam nunc, accumsan
+                            congue. Lorem ipsum primis in nibh vel risus. THREE</p>
+                   <!-- </div> -->
                 </div>                                
             </div>
             <div class="reviews__wrappers">

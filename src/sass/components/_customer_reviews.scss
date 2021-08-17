@@ -25,17 +25,34 @@
   margin-bottom: 15px;
 }
 .Reviews__img--itemOne {
-  // display: none;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .Reviews__img--itemTwo {
   position: absolute;
   top: 0;
   left: 118px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    left: 268px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 420px;
+  }
 }
 .Reviews__img--itemThree {
   position: absolute;
   top: 0;
   left: 118px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    left: 268px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 420px;
+  }
 }
 .Reviews__content {
   margin: 0 auto;
@@ -61,6 +78,7 @@
   width: 54px;
   height: 40px;
   font-size: 60px;
+  z-index: 0;
   @media screen and (min-width: 768px) {
     left: 55px;
   }
@@ -74,13 +92,30 @@
   font-size: 12px;
   line-height: 1.8;
   letter-spacing: 0.04em;
-  z-index: 2;
+  z-index: 3;
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
   }
 }
-.reviews__gradient .Reviews__text::after {
+.Reviews__text--one {
+}
+.Reviews__text--two {
+  display: none;
+}
+.Reviews__text--three {
+  display: none;
+}
+// .Reviews__text::before {
+//   content: '';
+//   display: inline-flex;
+//   width: 54px;
+//   height: 40px;
+//   background-image: url('/images/quotes.svg');
+//   background-repeat: no-repeat;
+//   background-size: contain;
+// }
+.Reviews__text::after {
   content: '';
   position: absolute;
   left: 0;
@@ -132,18 +167,19 @@
 }
 
 .reviews__pagination-link {
-  // position: absolute;
   width: 12px;
   height: 12px;
   background-color: #d9d9d9;
   border-radius: 50%;
-  // margin: 0 9px;
 }
 .reviews__pagination-linkLeft {
-  // display: none;
+  visibility: hidden;
 }
 .reviews__pagination-linkMid {
   margin: 0 18px;
+}
+.reviews__pagination-linkMid:checked {
+  visibility: hidden;
 }
 .Reviews__svg {
   display: flex;
@@ -156,7 +192,24 @@
   width: 12px;
   height: 12px;
 }
+.Reviews__svg--icoLeft {
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
 .Reviews__svg--icoMid {
-  // display: none;
+  visibility: hidden;
   margin: 0 18px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+.Reviews__svg--icoRight {
+  visibility: hidden;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }

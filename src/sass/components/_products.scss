@@ -68,6 +68,9 @@
 }
 .products__list {
   @extend %list;
+  @media screen and (max-width: 768px) {
+    margin-bottom: -130px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -89,11 +92,7 @@
     padding-bottom: 41px;
     width: 280px;
     height: 485px;
-  }
-  &:not(:last-child) {
-    @media screen and (max-width: 768px) {
-      margin-bottom: 130px;
-    }
+    margin-bottom: 130px;
   }
   @media screen and (min-width: 768px) {
     width: 220px;

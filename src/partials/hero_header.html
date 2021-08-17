@@ -39,20 +39,20 @@
             </a>
             <ul class="site-nav__list">
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link site-nav__link--current">Home
+                    <a href="#home" class="site-nav__link site-nav__link--current">Home
                     </a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link">About us</a>
+                    <a href="#About" class="site-nav__link">About us</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link">How it’s made?</a>
+                    <a href="#How" class="site-nav__link">How it’s made?</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link">Our products</a>
+                    <a href="#Our" class="site-nav__link">Our products</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="" class="site-nav__link">Contact</a>
+                    <a href="#Contact" class="site-nav__link">Contact</a>
                 </li>
             </ul>
             <div class="header__button__position">
@@ -141,12 +141,11 @@
     openModalOpen.addEventListener('click', isOpenModal);
     const modalEL = document.querySelector('.modal');
     function isOpenModal() {
-        modalEL.classList.remove('is-hidden')
         modalEL.classList.add('is-open')
     }
     const closeModalOpen = document.querySelector('.button__close');
     closeModalOpen.addEventListener('click', isCloseModal);
     function isCloseModal() {
-        modalEL.classList.remove('is-open')
+        modalEL.classList.remove('is-open');
     }
 </script>

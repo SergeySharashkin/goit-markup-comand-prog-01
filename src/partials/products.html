@@ -1,8 +1,8 @@
-<section class="products">
+<section class="products" id="Products">
 <div class="products__container">
 <h2 class="products__title">
 100% natural<br>
-<span class="products__title--accent" id="products">products</span>
+<span class="products__title--accent">products</span>
 </h2>
 <ul class="products__list">
     <li class="products__item products__item--ice-cream"><a href="" class="products__link">
@@ -24,10 +24,24 @@
         <p class="products__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
         aliqua facilisis.</p>
         </div>
+        </a>
+        <div class="btn__thumb">
+        <button type="button" class="description-button"
+        aria-expanded="false"
+        aria-controls='description-container'
+        data-description-button>
         <img class="products__icon" srcset="/images/Marrow-right4.png 40w, /images/Marrow-right4@2x.png 80w"
         src="/images/Marrow-right4.png" alt="arrow-right"
         sizes="40px, 100vw" />
-        </a>
+        </button>
+        </div>
+    <div class="description-container products__card__text is-open" id="description-container" data-description>
+        <p class="description__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tenetur culpa adipisci natus excepturi error
+            maxime molestias illo porro, laborum eos, nostrum cupiditate dignissimos quaerat, autem vel alias repellendus
+            distinctio.
+        </p>
+    </div>
     </li>
     <li class="products__item products__item--ice-coffee"><a href="" class="products__link">
         <div class="products__image" >
@@ -48,9 +62,21 @@
                 tempor incididunt ut labore et. dolore magna
                 aliqua facilisis.</p>
         </div>
-        <img class="products__icon" srcset="/images/Marrow-right4.png 40w, /images/Marrow-right4@2x.png 80w"
-            src="/images/Marrow-right4.png" alt="arrow-right" sizes=" 40px, 100vw" />
-    </a>
+       </a>
+        <div class="btn__thumb">
+            <button type="button" class="description-button" aria-expanded="false" aria-controls='description-container'
+                data-description-button>
+                <img class="products__icon" srcset="/images/Marrow-right4.png 40w, /images/Marrow-right4@2x.png 80w"
+                    src="/images/Marrow-right4.png" alt="arrow-right" sizes="40px, 100vw" />
+            </button>
+        </div>
+        <div class="description-container products__card__text is-open" id="description-container" data-description>
+            <p class="description__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tenetur culpa adipisci natus excepturi error
+                maxime molestias illo porro, laborum eos, nostrum cupiditate dignissimos quaerat, autem vel alias repellendus
+                distinctio.
+            </p>
+        </div>
     </li>
     <li class="products__item products__item--milkshakes"><a href="" class="products__link">
             <div class="products__image">
@@ -71,10 +97,38 @@
                 tempor incididunt ut labore et. dolore magna
                 aliqua facilisis.</p>
         </div>
-        <img class="products__icon" srcset="/images/Marrow-right4.png 40w, /images/Marrow-right4@2x.png 80w"
-            src="/images/Marrow-right4.png" alt="arrow-right" sizes=" 40px, 100vw" />
-    </a>
+        </a>
+        <div class="btn__thumb">
+            <button type="button" class="description-button" aria-expanded="false" aria-controls='description-container'
+                data-description-button>
+                <img class="products__icon" srcset="/images/Marrow-right4.png 40w, /images/Marrow-right4@2x.png 80w"
+                    src="/images/Marrow-right4.png" alt="arrow-right" sizes="40px, 100vw" />
+            </button>
+        </div>
+        <div class="description-container products__card__text is-open" id="description-container" data-description>
+            <p class="description__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tenetur culpa adipisci natus excepturi error
+                maxime molestias illo porro, laborum eos, nostrum cupiditate dignissimos quaerat, autem vel alias repellendus
+                distinctio.
+            </p>
+        </div>
     </li>
 </ul>
 </div>
 </section>
+<script>
+    (() => {
+        const descriptBtnRef = document.querySelector("[data-description-button]");
+        const descriptRef = document.querySelector("[data-description]");
+
+        descriptBtnRef.addEventListener("click", () => {
+        const expanded = 
+        descriptBtnRef.getAttribute("aria-expanded") === "true" || false;
+        
+        descriptBtnRef.classList.toggle("is-open");
+        descriptBtnRef.setAttribute("aria-expanded", !expanded);
+
+        descriptRef.classList.toggle("is-open");
+        });
+    })();
+    </script>

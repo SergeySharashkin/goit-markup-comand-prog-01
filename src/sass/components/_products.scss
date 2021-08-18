@@ -1,3 +1,10 @@
+@mixin transition-base($properties...) {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @if length($properties) > 0 {
+    transition-property: $properties;
+  }
+}
 .products {
   background-color: $hero-text-color;
 }
@@ -68,6 +75,9 @@
 }
 .products__list {
   @extend %list;
+  @media screen and (max-width: 768px) {
+    margin-bottom: -130px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -89,11 +99,7 @@
     padding-bottom: 41px;
     width: 280px;
     height: 485px;
-  }
-  &:not(:last-child) {
-    @media screen and (max-width: 768px) {
-      margin-bottom: 130px;
-    }
+    margin-bottom: 130px;
   }
   @media screen and (min-width: 768px) {
     width: 220px;
@@ -109,15 +115,29 @@
     padding-top: 163px;
     padding-bottom: 50px;
   }
+  @include transition-base(box-shadow);
 }
+
 .products__item--ice-cream {
   background-color: $hero-bgr-color;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 5px 30px $hero-bgr-color;
+  }
 }
 .products__item--ice-coffee {
   background-color: $secondary-bgr-color;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 5px 30px $secondary-bgr-color;
+  }
 }
 .products__item--milkshakes {
   background-color: $tettiary-bgr-color;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 5px 30px $tettiary-bgr-color;
+  }
 }
 .products__image {
   display: flex;
@@ -207,6 +227,62 @@
     line-height: 1.76;
   }
 }
+.btn__thumb {
+  text-align: center;
+}
+.description-button {
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  background-color: none;
+  cursor: pointer;
+  min-width: 40px;
+  height: 40px;
+  z-index: 1;
+}
 .products__icon {
-  @extend %auto-margin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// модальное окно
+.description-container {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+  background-color: $hero-text-color;
+  text-align: center;
+  transform: translateX(-100%);
+  @include transition-base(transform, opacity);
+  &.is-open {
+    display: block;
+    flex-grow: 1;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.description__text {
+  color: $primary-text-color;
+}
+.description-container--ice-cream {
+  border: 4px solid $hero-bgr-color;
+}
+.description-container--ice-coffee {
+  border: 4px solid $secondary-bgr-color;
+}
+.description-container--milkshakes {
+  border: 4px solid $tettiary-bgr-color;
 }

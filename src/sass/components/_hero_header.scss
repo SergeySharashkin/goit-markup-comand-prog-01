@@ -216,10 +216,14 @@ ul {
 }
 @keyframes ice_cream_anim {
   0% {
-    left: 0;
+    // left: 0;
+    transform: rotate(18deg);
+    transform-origin: bottom center;
   }
   100% {
-    left: 53%;
+    // left: 53%;
+    transform: rotate(-18deg);
+    transform-origin: bottom center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -481,7 +485,7 @@ ul {
       font-size: 58px;
     }
   }
-  .button__products {
+  .button__contain {
     .button__products {
       font-size: 14px;
       line-height: 1.285;

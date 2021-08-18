@@ -25,7 +25,7 @@
                     <a href="#How" class="modal__link">How it’s made?</a>
                 </li>
                 <li class="modal__item">
-                    <a href="#products" class="modal__link">Our products</a>
+                    <a href="#Products" class="modal__link">Our products</a>
                 </li>
                 <li class="modal__item">
                     <a href="#Contact" class="modal__link">Contact</a>
@@ -49,7 +49,7 @@
                     <a href="#How" class="site-nav__link">How it’s made?</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="#products" class="site-nav__link">Our products</a>
+                    <a href="#Products" class="site-nav__link">Our products</a>
                 </li>
                 <li class="site-nav__item">
                     <a href="#Contact" class="site-nav__link">Contact</a>
@@ -140,6 +140,7 @@
     const openModalOpen = document.querySelector('.button__open');
     openModalOpen.addEventListener('click', isOpenModal);
     const modalEL = document.querySelector('.modal');
+    console.log(modalEL);
     function isOpenModal() {
         modalEL.classList.add('is-open')
     }

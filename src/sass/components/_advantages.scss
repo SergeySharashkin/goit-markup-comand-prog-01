@@ -1,6 +1,7 @@
 .advantages {
-padding-bottom: 97px;
-padding-top: 39px;
+    @extend %auto-margin;
+    padding-bottom: 97px;
+    padding-top: 39px;
 
 background-color: $footer-bgr-color;
 @media screen and (min-width:768px){
@@ -11,14 +12,12 @@ padding-top: 66px;
 }
 .advantages__container {
     @extend %auto-margin;
+    @extend %contain-padding;
 max-width: 480px;
-padding-left: 20px;
-padding-right: 20px;
 @media screen and (min-width:768px){
     max-width:768px;
     display: flex;
-    
-    justify-content: center;
+        justify-content: center;
 }
 @media screen and (min-width:1200px){
     max-width:1200px;
@@ -30,8 +29,7 @@ padding-right: 20px;
 @media screen and (min-width:768px) {
    display: flex;
     flex-direction: row; 
-       
-}
+      }
 
 }
 .advantages__item {

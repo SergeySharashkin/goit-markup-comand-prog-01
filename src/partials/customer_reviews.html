@@ -2,7 +2,7 @@
     <section class="reviews" id="About">
         <div class="reviews__container">
             <div class="reviews__img">          
-                <img class="reviews__img--item reviews__img--itemOne" srcset="
+                <img class="reviews__img--item reviews__img--itemOne first_foto" srcset="
                 /images/testimonials11.png 1x,
                 /images/testimonials11@2x.png 2x"
                 src="/images/testimonials11.png" alt="request">
@@ -46,10 +46,34 @@
                 <svg class="reviews__svg--ico reviews__svg--icoMid">
                     <use href="/images/icons.svg#home"></use>
                 </svg>
-                <svg class="reviews__svg--ico reviews__svg--icoright">
+                <svg class="reviews__svg--ico reviews__svg--icoRight">
                     <use href="/images/icons.svg#home"></use>
                 </svg>
                 </div>
             </div>
         </div>
+        <script>
+            const custom1 = document.querySelector('.reviews__svg--icoLeft');
+            custom1.addEventListener('click',rev1)
+            function rev1() {
+                 img33.classList.remove('three_foto')
+                  img22.classList.remove('second_foto');
+                custom1.classList.toggle('first_foto')
+            }
+            const img22 = document.querySelector('.reviews__img--itemTwo')
+            const custom2 = document.querySelector('.reviews__svg--icoMid');
+            custom2.addEventListener('click', rev2)
+            function rev2() {
+                        img22.classList.add('second_foto');
+                        img33.classList.remove('three_foto')
+                    }
+                    const img33 = document.querySelector('.reviews__img--itemThree')
+                const custom3 = document.querySelector('.reviews__svg--icoRight');
+                    custom3.addEventListener('click', rev3)
+                    function rev3() {
+                            img33.classList.add('three_foto');
+                             img22.classList.remove('second_foto');
+                        }
+
+        </script>
     </section>

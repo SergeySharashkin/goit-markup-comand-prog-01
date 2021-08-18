@@ -1,13 +1,12 @@
 .gallery {
+  background: linear-gradient(to top, rgb(255, 255, 255) 60%, rgb(255, 245, 246) 60%);
+  width: 100%;
+}
+.gallery__bgk {
   margin: 0 auto;
   width: 100%;
-  //   border: 1px solid black;
-
-  background: linear-gradient(to top, rgb(255, 255, 255) 50%, rgb(255, 245, 246) 50%);
   background-image: url('/images/M_home-pic51.png');
-
   background-repeat: no-repeat;
-
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {

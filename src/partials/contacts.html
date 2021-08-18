@@ -1,8 +1,8 @@
-<section class="contacts" id="Contact">
+<section class="contacts">
   <div class="contacts__container">
     <h2 class="visually-hidden">Contacts</h2>
     <div class="contacts__cards-container">
-      <ul class="contacts__card">
+      <ul class="contacts__card" id="Contact">
         <li class="contacts__address">
           <p class="contacts__place">Cafe</p>
           <p class="contacts__city">Chicago</p>
@@ -69,4 +69,69 @@
       </button>
     </div>
   </div>
+  <!--  -->
+  <div class="backdrop__in__contacts is-hidden">
+    <div class="modal__in__contacts">
+      <button class="close_epta">close epta</button>
+      <span class="modal__title">Оставьте свои данные, мы вам перезвоним</span>
+      <form class="js-speaker-form" name="service">
+        <label class="modal__label" for="user_name"><span class="modal__mark">Имя</span>
+        </label>
+        <div class="input__container">
+          <input class="input" type="text" name="name" id="user_name">
+          <svg class="input__icon">
+            <use href=''></use>
+          </svg>
+        </div>
+
+        <label class="modal__label" for="tel"><span class="modal__mark">Телефон</span>
+        </label>
+        <div class="input__container">
+          <input class="input" type="tel" name="telephone" id="tel">
+          <svg class=input__icon>
+            <use href=''></use>
+          </svg>
+        </div>
+
+        <label class="modal__label" for="user_mail_modal"><span class="modal__mark">Почта</span>
+        </label>
+        <div class="input__container">
+          <input class="input" type="email" name="mail" id="user_mail_modal">
+          <svg class=input__icon>
+            <use href=''></use>
+          </svg>
+        </div>
+
+        <label class="modal__label" for="comment"><span class="modal__mark">Комментарий</span></label>
+        <div class="input__container">
+          <textarea class="comment" id="comment" name="comment" placeholder="Введите текст"></textarea>
+        </div>
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="checkbox" value="checkbox">
+          <svg class="checkbox__icon">
+            <use href=''></use>
+          </svg>
+          <span class="checkbox__title">Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox__link">
+              Условия
+              договора</a></span>
+        </label>
+        <label class="send">
+          <button type="submit" class="button">Отправить</button>
+        </label>
+      </form>
+    </div>
+  </div>
+  <script>
+    const button__franchise = document.querySelector('.contacts__button--reverse');
+    button__franchise.addEventListener('click', isOpenModalFranchise);
+    const aaaa = document.querySelector('.backdrop__in__contacts');
+    function isOpenModalFranchise() {
+      aaaa.classList.remove('is-hidden')
+    }
+    const bbbb = document.querySelector('.close_epta');
+    bbbb.addEventListener('click', isCloseModalFranchise)
+    function isCloseModalFranchise() {
+      aaaa.classList.add('is-hidden')
+    }
+  </script>
 </section>

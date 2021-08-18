@@ -4,6 +4,7 @@
 @media screen and (min-width: 320px) {
   .about_container {
     max-width: 320px;
+    padding-top: 288px;
   }
   .about_title--accent {
     margin-top: 15px;
@@ -53,6 +54,10 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .about_container {
+    padding-top: 130px;
+    max-width: 768px;
+  }
   .about_title {
     display: flex;
     flex-direction: column;
@@ -106,7 +111,7 @@
     margin-top: 62px;
   }
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1199px) {
   .about_img1--desktop {
     display: none;
   }
@@ -114,9 +119,10 @@
     display: none;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .about_container {
-    max-width: 1280px;
+    padding-top: 125px;
+    max-width: 1200px;
     z-index: 1;
   }
   .about_title {
@@ -172,7 +178,6 @@
 .about_container {
   position: relative;
   text-align: center;
-  padding-top: 288px;
   @extend %contain-padding;
   @extend %auto-margin;
 }
@@ -215,9 +220,17 @@
   bottom: -9.5%;
   @extend %auto-margin;
 }
+.about_input {
+  appearance: none;
+}
+.about_input:checked + p {
+  display: block;
+}
 .about_button {
+  display: inline-block;
   width: 176px;
   height: 44px;
+  margin-left: -5px;
   background: $hero-text-color;
   border-radius: 22px;
   border: 0;
@@ -232,4 +245,7 @@
   &:focus {
     background-color: #ecebeb;
   }
+}
+.about_modalText {
+  display: none;
 }

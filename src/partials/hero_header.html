@@ -141,13 +141,16 @@
     openModalOpen.addEventListener('click', isOpenModal);
     const modalEL = document.querySelector('.modal');
     function isOpenModal() {
-        modalEL.classList.add('is-open')
+        modalEL.classList.add('is-open');
+
     }
+
     const closeModalOpen = document.querySelector('.button__close');
     closeModalOpen.addEventListener('click', isCloseModal);
     function isCloseModal() {
         modalEL.classList.remove('is-open');
     }
+
     const fingCurrentEl = document.querySelectorAll('.modal__link');
     const listEl = document.querySelector('.modal__list');
     listEl.addEventListener('click', currentEl)
@@ -159,4 +162,5 @@
             e.target.classList.add('modal__link--current');
         }
     }
+
 </script>

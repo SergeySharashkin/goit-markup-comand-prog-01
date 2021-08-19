@@ -1,6 +1,9 @@
 .about {
   background-color: $footer-bgr-color;
 }
+.about_input:checked + p {
+  transform: translateY(0);
+}
 @media screen and (min-width: 320px) {
   .about_container {
     max-width: 320px;
@@ -34,6 +37,9 @@
   }
   .about_button {
     margin-top: 17px;
+  }
+  .about_modalText {
+    transform: translateY(-77%);
   }
 }
 @media screen and (max-width: 767px) {
@@ -115,6 +121,9 @@
   }
   .about_button {
     margin-top: 62px;
+  }
+  .about_modalText {
+    transform: translateY(-61%);
   }
 }
 @media screen and (max-width: 1199px) {
@@ -234,8 +243,8 @@
 .about_input {
   appearance: none;
 }
-.about_input:checked + p {
-  display: block;
+.checkbox {
+  overflow: hidden;
 }
 .about_button {
   display: inline-block;
@@ -257,8 +266,9 @@
   }
 }
 .about_modalText {
-  display: none;
+  overflow: hidden;
   @extend %list;
   font-weight: 500;
   color: $secondary-text-color;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

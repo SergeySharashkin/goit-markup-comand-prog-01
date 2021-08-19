@@ -171,8 +171,23 @@
   width: 12px;
   height: 12px;
   background-color: #d9d9d9;
+  background: linear-gradient(-45deg, #d9d9d9, white, pink, #d31342);
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
+  border: 1px solid #d9d9d9;
   border-radius: 50%;
   z-index: 2;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .reviews__pagination-linkLeft {
   // visibility: hidden;

@@ -1,5 +1,7 @@
 .about {
+  position: relative;
   background-color: $footer-bgr-color;
+  min-width: 100vw;
 }
 .about_input:checked + p {
   transform: translateY(0);
@@ -7,20 +9,24 @@
 @media screen and (min-width: 320px) {
   .about_container {
     max-width: 320px;
-    padding-top: 288px;
+    padding-top: 125px;
+    padding-bottom: 39px;
   }
   .about_title--accent {
     margin-top: 15px;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
   .about_text-wrapper {
     max-width: 220px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .about_title {
     font-size: 18px;
     line-height: 1.15;
-  }
-  .about_img2--mobile {
-    width: 320px;
   }
   .about_text--black {
     font-size: 12px;
@@ -41,14 +47,17 @@
   .about_modalText {
     transform: translateY(-77%);
   }
+  .about_img2--tablet {
+    display: none;
+  }
+  .about_img2--mobile {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 767px) {
   .about_title--accent {
     font-size: 34px;
-  }
-  .about_text-wrapper {
-    margin-right: auto;
-    margin-left: auto;
   }
   .about_img1--tablet {
     display: none;
@@ -96,7 +105,7 @@
     display: none;
   }
   .about_img1--tablet {
-    max-width: 340px;
+    width: 340px;
   }
   .about_img2--tablet {
     display: none;
@@ -188,14 +197,15 @@
     min-width: 516px;
   }
   .about_img2--desktop {
-    max-width: 1280px;
-    z-index: -1;
+    display: flex;
+    justify-content: space-between;
   }
   .about_button {
     margin-top: 45px;
   }
 }
 .about_container {
+  z-index: 1;
   position: relative;
   text-align: center;
   @extend %contain-padding;
@@ -229,35 +239,38 @@
   color: $secondary-text-color;
 }
 .about_img2--mobile {
+  min-width: 100vw;
   position: absolute;
   left: 0;
-  bottom: 61px;
+  bottom: 21%;
   @extend %auto-margin;
 }
 .about_img2--desktop {
+  min-width: 100vw;
   position: absolute;
   left: 0;
-  bottom: -9.5%;
+  bottom: 1%;
   @extend %auto-margin;
 }
 .about_input {
   appearance: none;
 }
 .checkbox {
+  display: inline-block;
   overflow: hidden;
 }
 .about_button {
-  display: inline-block;
+  display: block;
   width: 176px;
   height: 44px;
-  margin-left: -5px;
   background: $hero-text-color;
   border-radius: 22px;
   border: 0;
-  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 15px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 43px;
+  line-height: 1.29;
   text-align: center;
   color: $accent-color;
   &:hover,

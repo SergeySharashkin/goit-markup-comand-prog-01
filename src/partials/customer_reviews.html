@@ -2,31 +2,30 @@
     <section class="reviews" id="About">
         <div class="reviews__container">
             <div class="reviews__img">          
-                <img class="reviews__img--item reviews__img--itemOne first_foto" srcset="
+                <img class="reviews__img--item reviews__img--itemOne" srcset="
                 /images/testimonials11.png 1x,
                 /images/testimonials11@2x.png 2x"
                 src="/images/testimonials11.png" alt="request">
-                <img class="reviews__img--item reviews__img--itemTwo" srcset="
+                <img class="reviews__img--item reviews__img--itemTwo item_none" srcset="
                 /images/testimonials12.png 1x,
                 /images/testimonials12@2x.png 2x"
                 src="/images/testimonials12.png" alt="request">
-                <img class="reviews__img--item reviews__img--itemThree" srcset="
+                <img class="reviews__img--item reviews__img--itemThree item_none" srcset="
                 /images/testimonials11(1).png 1x,
                 /images/testimonials11@2x(1).png 2x"
                 src="/images/testimonials11(1).png" alt="request">
             </div>
             <div class="reviews__content">                            
                 <div class="reviews__gradient">                   
-                        <p class="reviews__text reviews__text--one">Nullam vivera consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
-                            nulla quam nunc, accumsan
-                            congue. Lorem ipsum primis in nibh vel risus.</p>
-                        <!-- <p class="reviews__text reviews__text--two">Nullam vivera consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+                        <p class="reviews__text reviews__text--one">Я являюсь фанатом данного мороженого уже много лет и регулярно покупаю их продукцию. Мороженое от Коровки
+                        такое же вкусное и натуральное, как и прежде. </p>
+                        <p class="reviews__text reviews__text--two item_none">Nullam vivera consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
                             nulla quam nunc, accumsan
                             congue. Lorem ipsum primis in nibh vel risus. TWO</p>
-                        <p class="reviews__text reviews__text--three">Nullam vivera consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                        <p class="reviews__text reviews__text--three item_none">Nullam vivera consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
                             hendrerit
                             nulla quam nunc, accumsan
-                            congue. Lorem ipsum primis in nibh vel risus. THrEE</p> -->                   
+                            congue. Lorem ipsum primis in nibh vel risus. THREE</p>                
                 </div>                                
             </div>
             <div class="reviews__wrappers">
@@ -35,45 +34,82 @@
                 <div class="reviews__wrappers-item"></div>
             </div>            
             <h5 class="reviews__name">Emily, Los Angeles</h5>
-            <div class="reviews__pagination">
-                <a class="reviews__pagination-link reviews__pagination-linkLeft" href="#"></a>                
-                <a class="reviews__pagination-link reviews__pagination-linkMid" href="#"></a>                
-                <a class="reviews__pagination-link reviews__pagination-linkright" href="#"></a>                
-                <div class="reviews__svg">
+            <div class="reviews__pagination">                
+                <a class="reviews__pagination-link reviews__pagination-linkLeft item_hidden" href="#About"></a>                
+                <a class="reviews__pagination-link reviews__pagination-linkMid" href="#About"></a>                
+                <a class="reviews__pagination-link reviews__pagination-linkRight" href="#About"></a>                
+                <a class="reviews__svg">
                 <svg class="reviews__svg--ico reviews__svg--icoLeft">
                     <use href="/images/icons.svg#home"></use>
                 </svg>
-                <svg class="reviews__svg--ico reviews__svg--icoMid">
+                <svg class="reviews__svg--ico reviews__svg--icoMid item_hidden">
                     <use href="/images/icons.svg#home"></use>
                 </svg>
-                <svg class="reviews__svg--ico reviews__svg--icoRight">
+                <svg class="reviews__svg--ico reviews__svg--icoRight item_hidden">
                     <use href="/images/icons.svg#home"></use>
                 </svg>
                 </div>
             </div>
         </div>
         <script>
-            const custom1 = document.querySelector('.reviews__svg--icoLeft');
-            custom1.addEventListener('click',rev1)
+            const img1 = document.querySelector('.reviews__img--itemOne')
+            const svg1 = document.querySelector('.reviews__svg--icoLeft')
+            const txt1 = document.querySelector('.reviews__text--one')
+            const btn1 = document.querySelector('.reviews__pagination-linkLeft');
+            console.log(btn1)
+            btn1.addEventListener('click', rev1)
             function rev1() {
-                 img33.classList.remove('three_foto')
-                  img22.classList.remove('second_foto');
-                custom1.classList.toggle('first_foto')
+                img1.classList.remove('item_none')
+                img2.classList.add('item_none')
+                img3.classList.add('item_none')
+                svg1.classList.remove('item_hidden')
+                svg2.classList.add('item_hidden')
+                svg3.classList.add('item_hidden')
+                txt1.classList.remove('item_none')
+                txt2.classList.add('item_none')
+                txt3.classList.add('item_none')
+                btn1.classList.add('item_hidden')
+                btn2.classList.remove('item_hidden')
+                btn3.classList.remove('item_hidden');
+                svg1.classList.toggle('visible_foto');
             }
-            const img22 = document.querySelector('.reviews__img--itemTwo')
-            const custom2 = document.querySelector('.reviews__svg--icoMid');
-            custom2.addEventListener('click', rev2)
+            const img2 = document.querySelector('.reviews__img--itemTwo')
+            const svg2 = document.querySelector('.reviews__svg--icoMid')
+            const txt2 = document.querySelector('.reviews__text--two')
+            const btn2 = document.querySelector('.reviews__pagination-linkMid');            
+            btn2.addEventListener('click', rev2)
             function rev2() {
-                        img22.classList.add('second_foto');
-                        img33.classList.remove('three_foto')
-                    }
-                    const img33 = document.querySelector('.reviews__img--itemThree')
-                const custom3 = document.querySelector('.reviews__svg--icoRight');
-                    custom3.addEventListener('click', rev3)
-                    function rev3() {
-                            img33.classList.add('three_foto');
-                             img22.classList.remove('second_foto');
-                        }
-
+                img1.classList.add('item_none')
+                img2.classList.remove('item_none')
+                img3.classList.add('item_none')
+                svg1.classList.add('item_hidden')
+                svg2.classList.remove('item_hidden')
+                svg3.classList.add('item_hidden')
+                txt1.classList.add('item_none')
+                txt2.classList.remove('item_none')
+                txt3.classList.add('item_none')
+                btn1.classList.remove('item_hidden')
+                btn2.classList.add('item_hidden')
+                btn3.classList.remove('item_hidden');
+            }
+            const img3 = document.querySelector('.reviews__img--itemThree')
+            const svg3 = document.querySelector('.reviews__svg--icoRight')
+            const txt3 = document.querySelector('.reviews__text--three')
+            const btn3 = document.querySelector('.reviews__pagination-linkRight');
+            btn3.addEventListener('click', rev3)
+            function rev3() {
+                img1.classList.add('item_none')
+                img2.classList.add('item_none')
+                img3.classList.remove('item_none')
+                svg1.classList.add('item_hidden')
+                svg2.classList.add('item_hidden')
+                svg3.classList.remove('item_hidden')
+                txt1.classList.add('item_none')
+                txt2.classList.add('item_none')
+                txt3.classList.remove('item_none')
+                btn1.classList.remove('item_hidden')
+                btn2.classList.remove('item_hidden')
+                btn3.classList.add('item_hidden');
+            }
         </script>
     </section>

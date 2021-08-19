@@ -1,11 +1,12 @@
 ul {
   @extend %list;
 }
+a {
+  text-decoration: none;
+}
 .header {
-  position: relative;
   background-color: $hero-bgr-color;
   overflow: auto;
-  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -15,6 +16,7 @@ ul {
   }
 }
 .hero__header__container {
+  position: relative;
   height: 502px;
   max-width: 480px;
   padding: 0 20px;
@@ -32,6 +34,7 @@ ul {
   background: $modal-bgr-color;
 
   transform: translateX(100%);
+  transition: transform 250ms;
 }
 .is-open {
   transform: translateX(0);
@@ -247,9 +250,6 @@ ul {
   .modal {
     width: 254px;
   }
-  .header {
-    max-width: 768px;
-  }
   .hero__header__container {
     padding: 0 34px;
     padding-top: 37px;
@@ -425,9 +425,6 @@ ul {
   }
 }
 @media screen and (min-width: 1200px) {
-  .header {
-    max-width: 1280px;
-  }
   .modal {
     display: none;
   }
@@ -437,7 +434,7 @@ ul {
   .hero__header__container {
     padding: 0 46px;
     padding-top: 37px;
-    max-width: 1200px;
+    max-width: 1280px;
     height: 665px;
   }
   .header__contain {

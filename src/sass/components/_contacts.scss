@@ -292,7 +292,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  background: #ffffff;
+  background: #f5d5d5;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 4px;
@@ -386,4 +386,14 @@
 
 .comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+.close_epta {
+font-family: $secondary-font;
+color: $accent-color;
+background-color: $tertiary-text-color;
+position: absolute;
+top:5%;
+right: 5%;
+border-radius: 2px;
+
 }

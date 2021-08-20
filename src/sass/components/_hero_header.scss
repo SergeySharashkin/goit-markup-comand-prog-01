@@ -35,6 +35,7 @@ a {
 
   transform: translateX(100%);
   transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .is-open {
   transform: translateX(0);
@@ -580,5 +581,10 @@ a {
         height: 30px;
       }
     }
+  }
+}
+@media screen and (max-height: 335px) {
+  .modal__list {
+    top: 105px;
   }
 }
